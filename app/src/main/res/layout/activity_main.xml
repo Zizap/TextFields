@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text"
+        app:hintTextColor="@android:color/holo_blue_dark"
+        app:boxBackgroundColor="@android:color/holo_blue_dark"
+        android:textColorHint="@android:color/holo_blue_dark"
+        app:boxStrokeColor="@color/green_l"
+        app:boxStrokeWidth="10dp"
+        app:boxStrokeWidthFocused="4dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/emot"
+        app:startIconTint="@color/pink"
+        app:helperTextEnabled="true"
+        app:helperText="@string/enter_text"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_l"
+            android:gravity="start"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/arrow"
+            android:textSize="30sp"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/city_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        android:textSize="40sp">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
