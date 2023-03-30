@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    style="@style/Theme.TextFields">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -53,6 +54,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         android:textSize="40sp">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_l"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/city_tv"
+        app:layout_constraintStart_toStartOf="@+id/city_tv"
+        app:layout_constraintTop_toBottomOf="@+id/city_tv"
+        android:text="popup">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/selectedItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/popup">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/selectedItems">
 
     </androidx.appcompat.widget.AppCompatTextView>
 

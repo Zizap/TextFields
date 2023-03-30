@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/catalogMenuPopup"
+        android:title="@string/catalog"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/favoritMenuPopup"
+        android:title="@string/favorit"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/settingMenuPopup"
+        android:title="@string/setting"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>
